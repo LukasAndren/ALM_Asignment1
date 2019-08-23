@@ -20,6 +20,8 @@ public class ALM_Asignment1 {
                 String mode2 = sc.nextLine();
                 if (mode2 == "1") {
                     System.out.println("Write the degrees in fahrenheit: ");
+                    //Merge fel
+                    
                     int fahrenheit = Integer.parseInt(sc.nextLine());
                     System.out.println(fahrenheit + " fahrenheit is equal to " + converter.fToC(fahrenheit) + " celcius");
                 } else if (mode2 == "2") {
