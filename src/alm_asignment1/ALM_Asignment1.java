@@ -29,6 +29,19 @@ public class ALM_Asignment1 {
                 }
                 break;
 
+            case "2":
+                System.out.println("1. km/h to knots \n2. Knots to km/h");
+                String mode3 = sc.nextLine();
+                if (mode3 == "1") {
+                    System.out.println("Write the speed in km/h");
+                    int kmh = Integer.parseInt(sc.nextLine());
+                    System.out.println(kmh + " km/h is equal to " + converter.kmhToK(kmh) + " knots");
+                } else if (mode3 == "2") {
+                    System.out.println("Write the speed in knots");
+                    int knots = Integer.parseInt(sc.nextLine());
+                    System.out.println(knots + " knots is equal to " + converter.kmhToK(knots) + " kmh");
+                }
+                break;
         }
 
     }
