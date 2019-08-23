@@ -10,42 +10,48 @@ public class ALM_Asignment1 {
         Converter converter = new Converter();
 
         System.out.println("Welcome to the conversion space! \nSelect what you would like to convert by entering 1 or 2:"
-                + "  \n1. Fahrenheit to celcius \n2. Kilometers to knots");
+                + "  \n1. Fahrenheit and celcius \n2. Kilometers and knots");
 
         String mode = sc.nextLine();
-      
+
         switch (mode) {
             case "1":
-                System.out.println("1. Fahrenheit to celcius \n2. Celsius to Fahrenheit");
+                System.out.println("\n1. Fahrenheit to celcius \n2. Celsius to Fahrenheit");
                 String mode2 = sc.nextLine();
-                if (mode2 == "1") {
-                    System.out.println("Write the degrees in fahrenheit: ");
-                    //Merge fel
-                    
-                    int fahrenheit = Integer.parseInt(sc.nextLine());
-                    System.out.println(fahrenheit + " fahrenheit is equal to " + converter.fToC(fahrenheit) + " celcius");
-                } else if (mode2 == "2") {
-                    System.out.println("Write the degrees in celcius: ");
-                    int celcius = Integer.parseInt(sc.nextLine());
-                    System.out.println(celcius + " celcius is equal to " + converter.cToF(celcius) + " fahrenheit");
+
+                switch (mode2) {
+                    case "1":
+                        System.out.println("\nWrite the degrees in fahrenheit: ");
+                        int fahrenheit = Integer.parseInt(sc.nextLine());
+                        System.out.println("\n" + fahrenheit + " fahrenheit is equal to " + converter.fToC(fahrenheit) + " celcius");
+                        break;
+
+                    case "2":
+                        System.out.println("\nWrite the degrees in celcius: ");
+                        int celcius = Integer.parseInt(sc.nextLine());
+                        System.out.println("\n" + celcius + " celcius is equal to " + converter.cToF(celcius) + " fahrenheit");
+                        break;
                 }
                 break;
 
             case "2":
-                System.out.println("1. km/h to knots \n2. Knots to km/h");
+                System.out.println("\n1. km/h to knots \n2. Knots to km/h");
                 String mode3 = sc.nextLine();
-                if (mode3 == "1") {
-                    System.out.println("Write the speed in km/h");
-                    int kmh = Integer.parseInt(sc.nextLine());
-                    System.out.println(kmh + " km/h is equal to " + converter.kmhToK(kmh) + " knots");
-                } else if (mode3 == "2") {
-                    System.out.println("Write the speed in knots");
-                    int knots = Integer.parseInt(sc.nextLine());
-                    System.out.println(knots + " knots is equal to " + converter.kmhToK(knots) + " kmh");
+                switch (mode3) {
+                    case "1":
+                        System.out.println("\nWrite the speed in km/h");
+                        double kmh = Double.parseDouble(sc.nextLine());
+                        System.out.println("\n" + kmh + " km/h is equal to " + converter.khmToKnots(kmh) + " knots");
+                        break;
+
+                    case "2":
+                        System.out.println("\nWrite the speed in knots");
+                        int knots = Integer.parseInt(sc.nextLine());
+                        System.out.println("\n" + knots + " knots is equal to " + converter.knotsToKmh(knots) + " kmh");
+                        break;
                 }
                 break;
         }
     }
 
-    }
 }
