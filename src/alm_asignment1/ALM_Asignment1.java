@@ -6,6 +6,8 @@ public class ALM_Asignment1 {
 
     public static void main(String[] args) {
 
+        //Version a1.0.0
+        
         Scanner sc = new Scanner(System.in, "iso8859-1");
         Converter converter = new Converter();
 
