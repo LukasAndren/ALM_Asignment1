@@ -22,4 +22,11 @@ public class Converter {
         
         return knots;
     }
+    
+    public double knotsToKmh(double knots) {
+        
+        double kmh = knots * 1.852;
+        
+        return kmh;
+    }
 }
