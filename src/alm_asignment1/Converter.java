@@ -15,4 +15,11 @@ public class Converter {
         
         return fahrenheit;
     }
+    
+    public double khmToKnots(double kmh) {
+        
+        double knots = kmh * 0.53996;
+        
+        return knots;
+    }
 }
