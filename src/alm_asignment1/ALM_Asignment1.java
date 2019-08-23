@@ -13,7 +13,7 @@ public class ALM_Asignment1 {
                 + "  \n1. Fahrenheit to celcius \n2. Kilometers to knots");
 
         String mode = sc.nextLine();
-
+      
         switch (mode) {
             case "1":
                 System.out.println("1. Fahrenheit to celcius \n2. Celsius to Fahrenheit");
@@ -43,6 +43,7 @@ public class ALM_Asignment1 {
                 }
                 break;
         }
+    }
 
     }
 }
