@@ -18,6 +18,7 @@ public class ALM_Asignment1 {
             case "1":
                 System.out.println("\n1. Fahrenheit to celcius \n2. Celsius to Fahrenheit");
                 String mode2 = sc.nextLine();
+
                 switch (mode2) {
                     case "1":
                         System.out.println("\nWrite the degrees in fahrenheit: ");
